@@ -9,6 +9,10 @@ if __name__ == '__main__':
     
     filename = sys.argv[1]
     try:
+        # If the file is not a .ujang file
+        if filename.split('.')[1] != 'ujang':
+            raise Exception(f"'{filename}' is not an ujang file")
+        
         with open(filename, 'r') as ujang_file:
             text = ujang_file.read()
     except FileNotFoundError:
