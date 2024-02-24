@@ -1,4 +1,4 @@
-from token import Token, INTEGER, PLUS, MINUS, MUL, DIV, PRINT, EOF
+from utoken import Token, INTEGER, PLUS, MINUS, MUL, DIV, PRINT, EOF
 
 class Lexer:
     def __init__(self, text: str) -> None:
