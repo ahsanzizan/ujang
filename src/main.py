@@ -21,5 +21,4 @@ if __name__ == '__main__':
     
     lexer = Lexer(text)
     interpreter = Interpreter(lexer)
-    result = interpreter.expr()
-    print(result)
+    interpreter.interpret()
