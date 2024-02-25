@@ -4,6 +4,7 @@ class Lexer:
     def __init__(self, text: str) -> None:
         self.text = text
         self.pos = 0
+        self.current_char = self.text[self.pos]
     
     def error(self):
         raise Exception('Invalid character')
